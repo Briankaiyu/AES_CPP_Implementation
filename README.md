@@ -1,7 +1,7 @@
 # AES_CPP_Implementation
 
 COMPILE WITH:
-g++ -o aes aes.cpp
+g++ -std=c++0x -o aes aes.cpp
 
 RUN WITH:
 ./aes
@@ -11,8 +11,6 @@ Changelog 1.0:
 
 To-do List:
 -Spellcheck comments
--Implement error checking
--Research and add license and .gitignore (first time github user, my apologies)
 -Figure out how to reconvert converted text into plain text.
 
 

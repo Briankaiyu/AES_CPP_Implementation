@@ -50,12 +50,23 @@ int main()
 	cout<<"Enter the name of the input plaintext file:";
 	cin>>filename;
 	input.open(filename.c_str());
-
+	//check if file opened	
+	if(!input.is_open())
+	{
+		cout<<"Error: Could not open file."<<endl;
+		return 1;
+	}
 
 	cout<<"Enter the name of the input key file:";
 	cin>>filename;
 	keyfile.open(filename.c_str());
-
+	//check if file open
+	if(!keyfile.is_open())
+	{
+		cout<<"Error: Could not open file." <<endl;
+		return 1;
+	}
+	
 	cout<<"Enter the name of the output ciphertext file:";
 	cin>>filename;
 	output.open(filename.c_str());
